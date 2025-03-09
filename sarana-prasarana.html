@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarana dan Prasarana | SDN Ponter 3</title>
+    <!-- AOS Untuk Animasi pada Website -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 100px 0 0;
+        }
+
+        body::-webkit-scrollbar {
+            overflow: hidden;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            position: relative;
+            margin: 0 100px 0 0;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 450;
+            cursor: pointer;
+        }
+
+        .btnprofil {
+            color: #CA0000;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            width: 150px;
+            text-align: center;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .dropdown a:hover {
+            background-color: #f4f4f4;
+            color: #CA0000;
+        }
+
+        .nav-arrow {
+            margin: 0 0 0 1px;
+            font-size: 12px;
+            color: #000;
+        }
+
+        .login-btn {
+            background-color: #CA0000;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.4s;
+            border: 3px solid transparent;
+        }
+
+        .login-btn:hover {
+            color: #CA0000;
+            background: transparent;
+            border: 3px solid #CA0000;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 1410px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .container p {
+            width: 75%;
+            padding: 0 0 0 14%;
+            font-size: 17px;
+        }
+
+        .container1 {
+            padding: 1px 0;
+            background: white;
+            margin: 20px auto;
+            width: 1450px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="Logo SD.png" height="60" alt="Logo SDN Pondok Terong 3">
+            <h1>SDN PONDOK TERONG 3</h1>
+        </div>
+        <ul>
+            <li><a href="index.html" class="btnhome">Beranda</a></li>
+            <li class="dropdown-container">
+                <a id="profil-btn">Profil <span class="nav-arrow">▼</span></a>
+                <div class="dropdown" id="profil-dropdown">
+                    <a href="sejarah.html">Sejarah</a>
+                    <a href="visi-misi.html">Visi dan Misi</a>
+                </div>
+            </li>
+            <li class="dropdown-container">
+                <a id="informasi-btn" class="btnprofil">Informasi <span class="nav-arrow">▼</span></a>
+                <div class="dropdown" id="informasi-dropdown">
+                    <a href="sarana-prasarana.html">Sarana dan Prasarana</a>
+                    <a href="galeri.html">Galeri Sekolah</a>
+                </div>
+            </li>
+            <li><a href="kontakponter3.html">Contact</a></li>
+            <li><a href="loginponter3.php" class="login-btn">Log In</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container1" data-aos="fade-right">
+        <h2>Sarana dan Prasarana SDN Pondok Terong 3</h2>
+    </div>
+
+    <div class="container" data-aos="fade-left" data-aos-delay="400">
+        <p>SDN Pondok Terong 3 memiliki berbagai fasilitas untuk menunjang proses belajar-mengajar dan kegiatan siswa, antara lain:</p>
+    </div>
+
+    <div class="container" data-aos="fade-right" data-aos-delay="800">
+        <ol start="1">
+            <li> Ruang Kelas, Terdiri dari 7 ruang kelas yang nyaman dan dilengkapi dengan papan tulis serta meja-kursi yang tertata rapi.</li><br>
+            <li> Perpustakaan, Memiliki 1 perpustakaan dengan koleksi buku pelajaran, buku cerita, dan referensi lainnya untuk menunjang literasi siswa.</li><br>
+            <li> Ruang Guru, Tempat bagi para guru untuk berkoordinasi, menyusun bahan ajar, dan beristirahat.</li><br>
+            <li> Ruang Kepala Sekolah, Ruangan khusus untuk kepala sekolah dalam menjalankan administrasi dan kepemimpinan sekolah.</li><br>
+            <li> Lapangan Olahraga, Area terbuka yang digunakan untuk kegiatan olahraga seperti senam, sepak bola, dan upacara.</li><br>
+            <li> Mushola, Tempat ibadah bagi siswa dan guru yang beragama Islam.</li><br>
+            <li> Toilet Sekolah, Tersedia untuk siswa dan guru dengan kondisi yang bersih dan terawat.</li><br>
+            <li> Kantin Sekolah, Menyediakan makanan dan minuman sehat bagi siswa dengan harga terjangkau.</li><br>
+            <li> Taman Sekolah, Area hijau yang berfungsi sebagai ruang santai sekaligus tempat edukasi lingkungan bagi siswa.</li><br>
+        </ol>
+    </div>    
+
+    
+    
+    
+</body>
+
+<!-- Script untuk setup animasi websitenya -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init( {
+        once: true 
+    } );
+</script>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const profilBtn = document.getElementById("profil-btn");
+        const profilDropdown = document.getElementById("profil-dropdown");
+        const informasiBtn = document.getElementById("informasi-btn");
+        const informasiDropdown = document.getElementById("informasi-dropdown");
+
+        profilBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            profilDropdown.style.display = (profilDropdown.style.display === "block") ? "none" : "block";
+        });
+
+        informasiBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            informasiDropdown.style.display = (informasiDropdown.style.display === "block") ? "none" : "block";
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!profilBtn.contains(event.target) && !profilDropdown.contains(event.target)) {
+                profilDropdown.style.display = "none";
+            }
+            if (!informasiBtn.contains(event.target) && !informasiDropdown.contains(event.target)) {
+                informasiDropdown.style.display = "none";
+            }
+        });
+
+    });
+</script>
+</html>

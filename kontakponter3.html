@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SDN Ponter 3</title>
+    <!-- AOS Untuk Animasi pada Website -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        body::-webkit-scrollbar {
+            overflow: hidden;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            position: relative;
+            margin: 0 100px 0 0;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 450;
+            cursor: pointer;
+        }
+
+        .btncontact {
+            color: #CA0000;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            width: 150px;
+            text-align: center;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .dropdown a:hover {
+            background-color: #f4f4f4;
+            color: #CA0000;
+        }
+
+        .nav-arrow {
+            margin: 0 0 0 1px;
+            font-size: 12px;
+            color: #000;
+        }
+
+        .login-btn {
+            background-color: #CA0000;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.4s;
+            border: 3px solid transparent;
+        }
+
+        .login-btn:hover {
+            color: #CA0000;
+            background: transparent;
+            border: 3px solid #CA0000;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="Logo SD.png" height="60" alt="Logo SDN Pondok Terong 3">
+            <h1>SDN PONDOK TERONG 3</h1>
+        </div>
+        <ul>
+            <li><a href="index.html" class="btnhome">Beranda</a></li>
+            <li class="dropdown-container">
+                <a id="profil-btn">Profil <span class="nav-arrow">▼</span></a>
+                <div class="dropdown" id="profil-dropdown">
+                    <a href="profilponter3.html">Sejarah</a>
+                    <a href="profilponter3.html">Visi dan Misi</a>
+                    <a href="profilponter3.html">Daftar Guru</a>
+                </div>
+            </li>
+            <li class="dropdown-container">
+                <a id="informasi-btn">Informasi <span class="nav-arrow">▼</span></a>
+                <div class="dropdown" id="informasi-dropdown">
+                    <a href="informasiponter3.html">Profil</a>
+                    <a href="informasiponter3.html">Fasilitas</a>
+                    <a href="informasiponter3.html">Kontak</a>
+                </div>
+            </li>
+            <li><a href="kontakponter3.html" class="btncontact">Contact</a></li>
+            <li><a href="loginponter3.php" class="login-btn">Log In</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" data-aos="fade-right">
+        <h1>Kontak SDN Pondok Terong 3</h1>
+        <p><strong>Nama Sekolah:</strong> SD Negeri Pondok Terong 3</p>
+        <p><strong>NPSN:</strong> 20228879</p>
+        <p><strong>Alamat:</strong> Bojong Pondok Terong Rt. 04/13, Kelurahan Bojong Pondok Terong, Kecamatan Cipayung, Kota Depok, Provinsi Jawa Barat, Kode Pos 16444</p>
+        <p><strong>Email:</strong> sdnponter3@gmail.com</p>
+        <p><strong>Telepon:</strong> Tidak tersedia</p>
+    </div>
+
+    <div class="container map-container" id="lokasi" data-aos="fade-left" data-aos-duration="400">
+        <h2>Lokasi Sekolah</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.328973502788!2d106.83202936861541!3d-6.383260868556282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c2c81363a5f1%3A0x8e5a36d1cdddf2d1!2sSDN%20Pondok%20Terong%203!5e0!3m2!1sid!2sid!4v1707063623181" allowfullscreen></iframe>
+    </div>
+    
+    <div class="container" id="kontak"  data-aos="fade-right" data-aos-duration="600">
+        <h2>Hubungi Kami</h2>
+        <p>Email: <a href="mailto:sdnponter3@gmail.com">sdnponter3@gmail.com</a></p>
+    </div>
+</body>
+
+<!-- Script untuk setup animasi websitenya -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init( {
+        once: true 
+    } );
+</script>
+
+<script>
+    function onload() {
+        alert('Selamat Datang di SDN Pondok Terong 3!');
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const profilBtn = document.getElementById("profil-btn");
+        const profilDropdown = document.getElementById("profil-dropdown");
+        const informasiBtn = document.getElementById("informasi-btn");
+        const informasiDropdown = document.getElementById("informasi-dropdown");
+
+        profilBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            profilDropdown.style.display = (profilDropdown.style.display === "block") ? "none" : "block";
+        });
+
+        informasiBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            informasiDropdown.style.display = (informasiDropdown.style.display === "block") ? "none" : "block";
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!profilBtn.contains(event.target) && !profilDropdown.contains(event.target)) {
+                profilDropdown.style.display = "none";
+            }
+            if (!informasiBtn.contains(event.target) && !informasiDropdown.contains(event.target)) {
+                informasiDropdown.style.display = "none";
+            }
+        });
+
+    });
+</script>
+</html>
